@@ -381,5 +381,5 @@ function SetDocStringColors()
 "   Used for "Hint" signs in sign column.
 
 " NerdTree
-SetColor('NerdTreeDirSlash', _none, _none, _none)
-SetColor('NerdTreeCWD', _gray, _none, _none)
+call SetColor('NerdTreeDirSlash', _none, _none, _none)
+call SetColor('NerdTreeCWD', _gray, _none, _none)
