@@ -152,12 +152,14 @@ call SetColor('ColorColumn', _red, _purple, _underlined)
 " Cursor          the character under the cursor 
 call SetColor('Cursor', _black, _white, _none)
 " lCursor         the character under the cursor when language-mapping is used (see 'guicursor')
+call SetColor('lCursor', _black, _white, _none)
 " CursorIM        like Cursor, but used when in IME mode CursorIM
 " CursorColumn    the screen column that the cursor is in when 'cursorcolumn' is set
 call SetColor('CursorColumn', _none, _none, _none)
 " CursorLine      the screen line that the cursor is in when 'cursorline' is set
 call SetColor('CursorLine',   _none, _lightyellow, _none)
 " Directory       directory names (and other special names in listings)
+call SetColor('Directory',   _blue, _none, _none)
 " DiffAdd         diff mode: Added line diff.txt
 call SetColor('DiffAdd', _green, _none, _none)
 " DiffChange      diff mode: Changed line diff.txt
@@ -182,8 +184,11 @@ call SetColor('SignColumn', _none, _none, _none)
 " LineNr          Line number for :number and :# commands, and when 'number' or 'relativenumber' option is set.
 call SetColor('LineNr', _silver, _none, _none)
 " LineNrAbove     Line number for when the 'relativenumber' option is set, above the cursor line.
+call SetColor('LineNrAbove', _silver, _none, _none)
 " LineNrBelow     Line number for when the 'relativenumber' option is set, below the cursor line.
+call SetColor('LineNrBelow', _silver, _none, _none)
 " CursorLineNr    Like LineNr when 'cursorline' is set and 'cursorlineopt' is set to number or both, or 'relativenumber' is set, for the cursor line.
+call SetColor('CursorLineNr', _silver, _lightyellow, _none)
 " MatchParen      The character under the cursor or just before it, if it is a paired bracket, and its match. pi_paren.txt
 call SetColor('MatchParen', _black, _yellow, _none)
 " ModeMsg         'showmode' message (e.g., '-- INSERT --')
