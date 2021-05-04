@@ -1,5 +1,6 @@
 " Name:       Intellij Light
-" Maintainer: Gilbert Francois Duivesteijn (https://github.com/gilbertfrancois/intellij-light.vim.git)
+" Author:     Gilbert Francois Duivesteijn
+" Maintainer: Gilbert Francois Duivesteijn
 " License:    Apache
 " xterm-256color reference: https://gist.github.com/jasonm23/2868981
 " https://vim.fandom.com/wiki/256_colors_in_vim
@@ -8,16 +9,16 @@
 "
 " 
 
+unlet! g:colors_name
+hi clear
+if exists("syntax_on")
+    syntax reset
+endif
+
 set background=light
 let colors_name = "intellij-light"
 
-hi clear
-
-if exists("syntax_on")
-  syntax reset
-endif
-
-set t_Co=256
+" set t_Co=256
 
 " For 256 color terminals, avoid using colour numbers below 15, because
 " they can be changed by custom terminal colour themes.
@@ -29,7 +30,7 @@ let _black =       {'cterm': 16, 'gui': '#000000'}
 let _red =         {'cterm': 88, 'gui': '#800000'}
 let _green =       {'cterm': 28, 'gui': '#008000'}
 let _yellow =      {'cterm':228, 'gui': '#808000'}
-let _blue =        {'cterm': 17, 'gui': '#0000B2'}
+let _blue =        {'cterm': 18, 'gui': '#0000B2'}
 let _purple =      {'cterm': 91, 'gui': '#660099'}
 let _cyan =        {'cterm': 30, 'gui': '#008080'}
 let _silver =      {'cterm':251, 'gui': '#c0c0c0'}
@@ -54,6 +55,7 @@ let _none =        {'cterm':      'NONE', 'gui': 'NONE'}
 let _italic =      {'cterm':    'italic', 'gui': 'italic'}
 let _bold =        {'cterm':      'bold', 'gui': 'bold'}
 let _underlined =  {'cterm': 'underline', 'gui': 'underline'}
+let _undercurl =   {'cterm': 'undercurl', 'gui': 'undercurl'}
 
 " ============================================================================== 
 " =   set colour function
@@ -145,7 +147,7 @@ call SetColor('Error', _lightred, _none, _underlined)
 call SetColor('Todo', _black, _lightyellow, _underlined)
 
 " ColorColumn     used for the columns set with 'colorcolumn'
-call SetColor('ColorColumn', _red, _purple, _underlined)
+call SetColor('ColorColumn', _none, _lightyellow, _none)
 "
 " Conceal         placeholder characters substituted for concealed
 "                 text (see 'conceallevel')
