@@ -16,7 +16,7 @@ if exists("syntax_on")
 endif
 
 set background=light
-let colors_name = "intellij-light"
+let colors_name = "intellij-light-ref"
 
 " set t_Co=256
 
@@ -37,7 +37,7 @@ let _silver =      {'cterm':251, 'gui': '#c0c0c0'}
 let _gray =        {'cterm':244, 'gui': '#808080'}
 let _lightred =    {'cterm':196, 'gui': '#ff0000'}
 let _lightgreen =  {'cterm': 46, 'gui': '#00ff00'}
-let _lightyellow = {'cterm':230, 'gui': '#ffffff'}
+let _lightyellow = {'cterm':230, 'gui': '#ffff00'}
 let _lightblue =   {'cterm': 20, 'gui': '#0000D7'}
 let _lightpurple = {'cterm':201, 'gui': '#ff00ff'}
 let _lightcyan =   {'cterm': 51, 'gui': '#00ffff'}
