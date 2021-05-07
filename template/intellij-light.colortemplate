@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 ; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
+=======
+; vim: ft=colortemplate fdm=marker cc=22,40,58,76 et ts=2 sw=2
+>>>>>>> Stashed changes
 
 ; Information {{{
 ; Mandatory
@@ -21,6 +25,7 @@ Option Prefix: light
 
 ; Common linked groups {{{
 ; Other conventional group names (see `:help group-name`)
+<<<<<<< Updated upstream
 ; Boolean           -> Constant
 ; Character         -> Constant
 ; Conditional       -> Statement
@@ -55,6 +60,10 @@ Option Prefix: light
 
 Background: light
 
+=======
+; }}}
+
+>>>>>>> Stashed changes
 ; Color palette {{{
 ; Color name         GUI                     Base256     Base16 (optional)
 Color: black         rgb(  0,   0,   0)        ~         Black
@@ -75,6 +84,7 @@ Color: brightcyan    rgb(100, 255, 255)        ~         LightCyan
 ; Intellij colors
 Color: black1        #000000                   ~         Black
 Color: red1          #800000                  88         DarkRed  
+<<<<<<< Updated upstream
 Color: green1        #008000                  28         DarkGreen     ; css string
 Color: yellow1       #808000                   ~         DarkYellow
 Color: blue1         #000080                  18         DarkBlue      ; python def
@@ -109,6 +119,58 @@ Term colors: brightblue brightmagenta brightcyan brightwhite
 ; }}}
 
 ; Default highlight groups {{{
+=======
+Color: red2          #FF0000                  88         DarkRed  
+Color: orange1       #804000                   ~         LightRed
+Color: orange2       #FF7F00                   ~         LightRed
+Color: green1        #008000                  28         DarkGreen         ; css string
+Color: green2        #00FF00                   ~         DarkGreen
+Color: yellow1       #808000                   ~         DarkYellow
+Color: yellow2       #FFFF00                   ~         Yellow
+Color: yellow3       #FFFAE3                 230         LightYellow       ; cursorline
+Color: blue1         #000080                  18         DarkBlue          ; python def
+Color: blue2         #0000FF                  21         LightBlue         ; python number
+Color: blue4         #0000B2                  19         DarkBlue          ; python decorator
+Color: purple1       #660099                  54         DarkMagenta       ; python param
+Color: purple2       #94558D                  96         DarkMagenta       ; python self
+Color: purple3       #660E7A                  54         DarkMagenta       ; python constant 
+Color: cyan1         #008080                  30         DarkCyan          ; python string
+Color: cyan2         #00FFFF                   ~         DarkCyan
+Color: silver        #c0c0c0                 250         LightGrey
+Color: gray          #808080                 244         DarkGrey
+
+Color: diffins       #BEE6BE                   ~         DarkGreen
+Color: diffdel       #C8C8C8                   ~         DarkGrey
+Color: diffcon       #FFD5CC                   ~         DarkRed
+Color: diffcha       #CAD9FA                   ~         DarkBlue
+Color: diffwar       #FFCE9D                   ~         LightYellow
+
+Color: guigray1      rgb(221, 221, 221)      253         DarkGrey
+Color: guigray2      rgb(236, 236, 236)      254         LightGrey
+Color: guigray3      rgb(242, 242, 242)      255         LightGrey
+Color: guipmenusel   rgb( 69, 119, 227)        ~         LightBlue
+Color: guivisual     rgb( 89, 116, 171)        ~         LightBlue
+
+Color: cocerror      rgb(220,   0,   0)        ~         DarkRed
+Color: cocwarn       rgb(220, 110,   0)        ~         LightRed
+Color: cocinfo       rgb(220, 220,   0)        ~         DarkYellow
+Color: cochint       rgb(  0, 110, 220)        ~         LightBlue
+
+Color: tmpfg         rgb(255,   0, 255)        ~         DarkMagenta
+Color: tmpbg         rgb(  0,  64,   0)        ~         DarkGreen
+
+; }}}
+
+; Terminal colors {{{
+Term colors: black       red       green       yellow       blue       magenta       cyan       gray 
+Term colors: brightblack brightred brightgreen brightyellow brightblue brightmagenta brightcyan white
+; }}}
+
+; UI groups {{{
+
+Background: light
+
+>>>>>>> Stashed changes
 Variant: gui
 #if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
 Variant: 256 8
@@ -121,6 +183,7 @@ Variant: gui 256 8
     Terminal         black             white
 #endif
 
+<<<<<<< Updated upstream
 ; Group              Foreground        Background        Attributes
 ColorColumn          fg                white
 Conceal              none              none
@@ -229,6 +292,165 @@ String
 ;  SpecialComment   special things inside a comment
 ;  Debug            debugging statements
 
+=======
+ColorColumn	         none              yellow3
+Conceal		           red1              none
+Cursor		           none              none              reverse
+CursorIM             black             white	
+CursorColumn	       none              none
+CursorLine	         none              yellow3
+Directory	           blue1             none
+
+DiffAdd		           diffins           black             reverse
+DiffChange	         diffcha           black             reverse
+DiffDelete	         diffdel           black             reverse
+DiffText             yellow2           yellow1             reverse
+EndOfBuffer          -> Normal
+
+TermCursor	         -> Cursor
+TermCursorNC         -> CursorIM
+
+ErrorMsg	           white             red               reverse
+VertSplit	           guigray1          none
+Folded		           gray              silver
+FoldColumn           gray              silver	
+SignColumn	         none              none
+
+IncSearch	           fg                yellow2
+Substitute	         tmpfg             tmpbg
+LineNr		           guigray1          none
+CursorLineNr	       black             yellow3
+MatchParen	         fg                yellow1
+ModeMsg		           black             none              bold
+MsgArea	             -> Normal
+MsgSeparator	       -> Normal
+MoreMsg		           purple1           none
+
+NonText	             red1              none	
+NormalFloat	         black             guigray1                            ; e.g. floating documentation
+NormalNC	           -> Normal
+Pmenu	               black             guigray3	
+PmenuSel	           white             guipmenusel
+PmenuSbar	           none              guigray2
+PmenuThumb	         none              guigray1
+Question	           tmpfg             tmpbg
+QuickFixLine	       tmpfg             tmpbg
+Search	             yellow2           black             reverse
+SpecialKey	         tmpfg             tmpbg
+SpellBad             magenta           none              s=brightblack t=underline g=undercurl
+SpellCap             magenta           none              s=brightblack t=underline g=undercurl
+SpellLocal           magenta           none              s=brightblack t=underline g=undercurl
+SpellRare            magenta           none              s=brightblack t=underline g=undercurl
+StatusLine	         black             guigray1          bold
+StatusLineNC	       black             guigray1
+TabLine		           black             guigray1
+TabLineFill	         black             guigray2 
+TabLineSel	         white             guipmenusel
+Title		             black             none
+Visual		           guivisual         white             reverse
+VisualNOS	           white             guivisual
+WarningMsg	         black             yellow1           reverse
+Whitespace	         black             none
+WildMenu	           white             magenta
+
+; }}}
+
+; Default code highlight groups {{{
+
+Comment              silver            none              italic            ; any comment
+Constant             purple1           none              bold,italic       ; any constant
+String               green1            none                                ; a string constant
+Character            blue1             none              bold              ; a character constant: 'c', '\n'
+Number               blue2             none                                ; a number constant: 234, 0xff
+Boolean              blue1             none              bold              ; a boolean constant: TRUE, false
+Float                blue1             none                                ; a floating point constant: 2.3e10
+
+Identifier           black             none                                ; any variable name
+Function             black             none                                ; a function name (also: methods for classes)
+
+Statement            blue1             none              bold              ; any statement
+Conditional          blue1             none              bold              ; if, then, else, endif, switch, etc.
+Repeat               blue1             none              bold              ; for, do, while, etc.
+Label                blue1             none              bold              ; case, default, etc.
+Operator             black             none                                ; sizeof, +, *, etc.
+Keyword              blue1             none              bold              ; any other keyword 
+Exception            blue1             none              bold              ; try, catch, throw
+
+PreProc              gray              none                                ; generic Preprocessor
+Include              blue1             none              bold
+Define               gray              none                                ; preprocessor #define
+Macro                gray              none                                ; same as Define
+PreCondit            gray              none                                ; preprocessor #if, #else, #endif, etc.
+
+Type                 black             none
+StorageClass         black             none
+Structure            black             none
+Typedef              black             none
+
+Special              black             none                                ; any special symbol
+SpecialChar          black             none                                ; special character in a constant
+Tag                  black             none                                ; you can use CTRL-] on this
+Delimiter            black             none                                ; character that needs attention
+SpecialComment       black             none                                ; special things inside a comment
+Debug                black             none                                ; debugging statements
+
+Underlined           none              none              underline
+
+Error                red2              none              underline
+Todo                 black             yellow2
+; }}}
+
+; Python {{{
+pythonString         cyan1             none              bold
+pythonClassVar       purple2           none
+; pythonBuiltin
+; pythonBuiltinFunc
+; pythonBuiltinObj
+; pythonCustomFunc
+pythonDecorator      purple1           none
+pythonInclude        blue1             none              bold
+; pythonInstances
+; pythonStatement
+; pythonConditional
+; pythonRepeat
+pythonOperator       blue1             none              bold
+pythonException      blue1             none
+; pythonBuiltinConstant
+pythonBoolean        blue1             none              bold
+pythonAttribute      purple1           none
+; pythonQuotes
+; docstring
+pythonComment        -> Comment
+
+; }}}
+
+; CocErrorFloat        red1              none
+; CocWarningFloat      orange1           none
+; CocInfoFloat         yellow1           none
+; CocHintFloat         blue1             none
+
+CocErrorSign         red1              diffcon
+CocWarningSign       orange1           diffwar
+CocInfoSign          yellow1           diffins
+CocHintSign          blue1             diffcha
+
+; CocErrorVirtualText  white             black               s=red2 t=underline g=undercurl
+; CocWarningVirtualText white            black               s=orange2 t=underline g=undercurl
+; CocInfoVirtualText	 white             black               s=green2 t=underline g=undercurl 
+; CocHintVirtualText	 white             black               s=blue2 t=underline g=undercurl 
+; CocErrorHighlight		 white             black			
+
+; Neovim language server {{{
+; LspDiagnosticsDefaultError             red1              none
+; LspDiagnosticsDefaultWarning           yellow1           none
+; LspDiagnosticsDefaultInformation       blue1             none
+; LspDiagnosticsDefaultHint              green1            none
+; LspDiagnosticsUnderlineError           tmpfg              tmpbg              underline
+; LspDiagnosticsUnderlineWarning         tmpfg           tmpbg              underline
+; LspDiagnosticsUnderlineInformation     tmpfg             tmpbg              underline
+; LspDiagnosticsUnderlineHint            tmpfg            tmpbg              underline
+; }}}
+>>>>>>> Stashed changes
 
 ; Additional highlight groups {{{
 ; Add additional highlight groups here if you want
