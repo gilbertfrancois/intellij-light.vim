@@ -1,8 +1,4 @@
-<<<<<<< Updated upstream
-; vim: ft=colortemplate fdm=marker cc=22,40,58 et ts=2 sw=2
-=======
 ; vim: ft=colortemplate fdm=marker cc=22,40,58,76 et ts=2 sw=2
->>>>>>> Stashed changes
 
 ; Information {{{
 ; Mandatory
@@ -25,45 +21,8 @@ Option Prefix: light
 
 ; Common linked groups {{{
 ; Other conventional group names (see `:help group-name`)
-<<<<<<< Updated upstream
-; Boolean           -> Constant
-; Character         -> Constant
-; Conditional       -> Statement
-; Debug             -> Special
-; Define            -> PreProc
-; Delimiter         -> Special
-; Exception         -> Statement
-; Float             -> Constant
-; Function          -> Identifier
-; Include           -> PreProc
-; Keyword           -> Statement
-; Label             -> Statement
-; Macro             -> PreProc
-; Number            -> Constant
-; Operator          -> Statement
-; PopupSelected     -> PmenuSel
-; PreCondit         -> PreProc
-; QuickFixLine      -> Search
-; Repeat            -> Statement
-; SpecialChar       -> Special
-; SpecialComment    -> Special
-; StatusLineTerm    -> StatusLine
-; StatusLineTermNC  -> StatusLineNC
-; StorageClass      -> Type
-; String            -> Constant
-; Structure         -> Type
-; Tag               -> Special
-; Typedef           -> Type
-; ; See `:help lCursor`
-; lCursor           -> Cursor
 ; }}}
 
-Background: light
-
-=======
-; }}}
-
->>>>>>> Stashed changes
 ; Color palette {{{
 ; Color name         GUI                     Base256     Base16 (optional)
 Color: black         rgb(  0,   0,   0)        ~         Black
@@ -84,42 +43,6 @@ Color: brightcyan    rgb(100, 255, 255)        ~         LightCyan
 ; Intellij colors
 Color: black1        #000000                   ~         Black
 Color: red1          #800000                  88         DarkRed  
-<<<<<<< Updated upstream
-Color: green1        #008000                  28         DarkGreen     ; css string
-Color: yellow1       #808000                   ~         DarkYellow
-Color: blue1         #000080                  18         DarkBlue      ; python def
-Color: purple1       #660099                  54         DarkMagenta   ; python param
-Color: cyan1         #008080                  30         DarkCyan      ; python string
-Color: silver        #c0c0c0                 250         LightGrey
-Color: gray          #808080                 244         DarkGrey
-
-Color: red2          #FF0000                  88         DarkRed  
-Color: green1        #008000                  28         DarkGreen     ; css string
-Color: yellow1       #808000                   ~         DarkYellow
-Color: blue1         #000080                  18         DarkBlue      ; python def
-Color: purple1       #660099                  54         DarkMagenta   ; python param
-Color: cyan1         #008080                  30         DarkCyan      ; python string
-
-
-
-Color: yellow2       #FFFF00                   ~         Yellow
-Color: blue2         #0000B2                  19         DarkBlue      ; python decorator
-Color: blue3         #0000FF                  21         LightBlue     ; python number
-Color: purple2       #94558D                  96         DarkMagenta   ; python self
-Color: cursorline    #FFFAE3                 230         LightYellow
-
-; You may use hexadecimal values, too, and you may provide an explicit base-256 color:
-Color: brightwhite   #ffffff                  231        White
-; }}}
-
-; Terminal colors {{{
-Term colors: black red green yellow blue magenta cyan white
-Term colors: brightblack brightred brightgreen brightyellow
-Term colors: brightblue brightmagenta brightcyan brightwhite
-; }}}
-
-; Default highlight groups {{{
-=======
 Color: red2          #FF0000                  88         DarkRed  
 Color: orange1       #804000                   ~         LightRed
 Color: orange2       #FF7F00                   ~         LightRed
@@ -170,7 +93,6 @@ Term colors: brightblack brightred brightgreen brightyellow brightblue brightmag
 
 Background: light
 
->>>>>>> Stashed changes
 Variant: gui
 #if get(g:, '@optionprefix_transp_bg', 0) && !has('gui_running')
 Variant: 256 8
@@ -183,116 +105,6 @@ Variant: gui 256 8
     Terminal         black             white
 #endif
 
-<<<<<<< Updated upstream
-; Group              Foreground        Background        Attributes
-ColorColumn          fg                white
-Conceal              none              none
-Cursor               black             white
-CursorColumn         black             white
-CursorLine           fg                cursorline
-CursorLineNr         black             white
-DiffAdd              black             white             reverse
-DiffChange           black             white             reverse
-DiffDelete           black             white             reverse
-DiffText             black             white             bold,reverse
-Directory            black             white
-EndOfBuffer          black             white
-ErrorMsg             black             white             reverse
-FoldColumn           black             white
-Folded               black             white             italic
-IncSearch            black             white             t=reverse g=standout
-LineNr               black             white
-MatchParen           black             white
-ModeMsg              black             white
-MoreMsg              black             white
-NonText              black             white
-NormalFloat
-NormalNC
-Pmenu                black             white
-PmenuSbar            black             white
-PmenuSel             black             white             reverse
-PmenuThumb           black             white
-Question             black             white
-QuickFixLine
-Search               black             white
-SignColumn           black             white
-SpecialKey           black             white
-SpellBad             black             white             s=red
-SpellCap             black             white             s=blue
-SpellLocal           black             white             s=magenta
-SpellRare            black             white             s=cyan reverse
-StatusLine           black             white
-StatusLineNC         black             white
-TabLine              black             white
-TabLineFill          black             white
-TabLineSel           black             white
-Title                black             white
-VertSplit            black             white
-Visual               black             white
-VisualNOS            black             white
-WarningMsg           black             white
-WildMenu             black             white
-Whitespace
-
-Comment              black             none              italic
-Constant             black             none
-Error                black             white             reverse
-Identifier           black             none
-Ignore               black             none
-PreProc              black             none
-Special              black             none
-Statement            black             none
-Todo                 black             none
-Type                 black             none
-Underlined           black             none
-; See `:help CursorIM`
-CursorIM             none              fg
-; See `:help window-toolbar`
-ToolbarLine          none              white
-ToolbarButton        black             white             bold
-; }}}
-
-; *Comment          any comment
-Comment              silver            none              italic
-; *Constant         any constant
-Constant             purple1           none              italic
-;  String           a string constant
-String               
-;  Character        a character constant: 'c', '\n'
-;  Number           a number constant: 234, 0xff
-;  Boolean          a boolean constant: TRUE, false
-;  Float            a floating point constant: 2.3e10
-
-; *Identifier       any variable name
-;  Function         function name (also: methods for classes)
-
-; *Statement        any statement
-;  Conditional      if, then, else, endif, switch, etc.
-;  Repeat           for, do, while, etc.
-;  Label            case, default, etc.
-;  Operator         sizeof, +, *, etc.
-;  Keyword          any other keyword
-;  Exception        try, catch, throw
-
-; *PreProc          generic Preprocessor
-;  Include          preprocessor #include
-;  Define           preprocessor #define
-;  Macro            same as Define
-;  PreCondit        preprocessor #if, #else, #endif, etc.
-
-; *Type             int, long, char, etc.
-;  StorageClass     static, register, volatile, etc.
-;  Structure        struct, union, enum, etc.
-;  Typedef          A typedef
-
-; *Special          any special symbol
-;  SpecialChar      special character in a constant
-;  Tag              you can use CTRL-] on this
-;  Delimiter        character that needs attention
-;  SpecialComment   special things inside a comment
-;  Debug            debugging statements
-
-=======
 ColorColumn	         none              yellow3
 Conceal		           red1              none
 Cursor		           none              none              reverse
@@ -450,7 +262,6 @@ CocHintSign          blue1             diffcha
 ; LspDiagnosticsUnderlineInformation     tmpfg             tmpbg              underline
 ; LspDiagnosticsUnderlineHint            tmpfg            tmpbg              underline
 ; }}}
->>>>>>> Stashed changes
 
 ; Additional highlight groups {{{
 ; Add additional highlight groups here if you want
