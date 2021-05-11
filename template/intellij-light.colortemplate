@@ -45,7 +45,8 @@ Color: lightcyan             rgb(  0, 255, 255)        ~         LightCyan
 Color: white                 rgb(255, 255, 255)        ~         White
 
 ; Intellij colors
-Color: orange1               #804000                   ~         DarkRed
+Color: darkorange            #804000                   ~         DarkRed
+Color: lightorange           #FF8000                   ~         LightRed
 Color: orange2               #FF7F00                   ~         LightRed
 Color: blue4                 #0000B2                  19         DarkBlue          ; python decorator
 Color: purple3               #660099                  54         DarkMagenta       ; python param
@@ -78,7 +79,7 @@ Color: todo_fg               #00AF5F                  35         LightYellow
 Color: todo_bg               #EEEEEE                 255         Black
 Color: error_fg              #AF0000                 124         LightRed
 Color: error_bg              #FFD7FF                 225         LightGrey
-Color: matchparen_bg         #C6C6C6                 251         DarkGrey
+Color: matchparen_bg         #FFFF00                 226         DarkGrey
 Color: matchparen_fg         #005F87                  24         Black
 Color: visual_fg             #EEEEEE                 255         White
 Color: visual_bg             #0087AF                  31         Blue
@@ -285,15 +286,15 @@ pythonComment        -> Comment
 
 ; }}}
 
-; CocErrorFloat        darkred              none
-; CocWarningFloat      orange1           none
-; CocInfoFloat         darkyellow           none
-; CocHintFloat         darkblue             none
+CocErrorFloat                darkred           none
+CocWarningFloat              darkorange        none
+CocInfoFloat                 darkblue          none
+CocHintFloat                 darkgreen         none
 
-; CocErrorSign         darkred              diffcon
-; CocWarningSign       orange1           diffwar
-; CocInfoSign          darkyellow           diffins
-; CocHintSign          darkblue             diffcha
+CocErrorSign                 darkred           none
+CocWarningSign               darkorange        none
+CocInfoSign                  darkblue          none
+CocHintSign                  darkgreen         none
 
 ; CocErrorVirtualText  white             black               s=lightred t=underline g=undercurl
 ; CocWarningVirtualText white            black               s=orange2 t=underline g=undercurl
