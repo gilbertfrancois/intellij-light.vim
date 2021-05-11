@@ -61,6 +61,8 @@ Color: cursorlinenr_fg       #EEEEEE                 255         LightGrey
 Color: cursorlinenr_bg       #FFFFFF                 230         LightYellow
 Color: popupmenu_fg          #444444                 238         Black
 Color: popupmenu_bg          #D0D0D0                 252         LightGrey
+Color: normal_nc_bg          #EEEEEE                 255         LightGrey
+Color: normal_float_bg       #DDDDDD                 253         LightGrey
 Color: search_fg             #444444                 238         Black 
 Color: search_bg             #FFFF5F                 227         LightYellow
 Color: nontext_fg            #808080                 244         DarkGrey
@@ -83,7 +85,7 @@ Color: visual_bg             #0087AF                  31         Blue
 Color: folded_fg             #0087AF                  31         Black
 Color: folded_bg             #AFD7FF                 153         LightGrey
 Color: wildmenu_fg           #444444                 238         Black
-Color: wildmenu_bg           #FFFF00                 226         LightGrey
+Color: wildmenu_bg           #D0D0D0                 226         LightGrey
 Color: spellbad              #FFAFD7                 218         LightMagenta
 Color: spellcap              #FFFFAF                 229         LightBlue
 Color: spellrare             #AFFF87                 156         LightGreen
@@ -152,14 +154,14 @@ Variant: gui 256 8
 Background: light
 
 NonText	                     nontext_fg        white	
-LineNr		                   linenr_fg         linenr_bg
-LineNrAbove                  linenr_fg         linenr_bg
-LineNrBelow                  linenr_fg         linenr_bg
+LineNr		                   linenr_fg         none
+LineNrAbove                  linenr_fg         none
+LineNrBelow                  linenr_fg         none
 Conceal		                   linenr_fg         linenr_bg
 VertSplit	                   vertsplit_fg      vertsplit_bg
 Folded		                   folded_fg         folded_bg
 FoldColumn                   folded_fg         white
-SignColumn	                 darkgreen         white
+SignColumn	                 darkgreen         none
 
 Cursor		                   none              none              reverse
 CursorIM                     black             white	
@@ -187,8 +189,8 @@ Question	                   darkyellow        none
 WarningMsg                   darkmagenta       none
 ErrorMsg	                   error_fg          error_bg
 
-NormalFloat	                 -> Normal
-NormalNC	                   -> Normal
+NormalFloat	                 fg                normal_float_bg 
+NormalNC	                   fg                normal_nc_bg
 Pmenu	                       popupmenu_fg      popupmenu_bg 
 PmenuSel	                   popupmenu_fg      popupmenu_bg      reverse
 ; PmenuSbar	           none              guigrey2
