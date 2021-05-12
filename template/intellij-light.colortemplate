@@ -80,7 +80,7 @@ Color: todo_fg               #00AF5F                  35         LightYellow
 Color: todo_bg               #EEEEEE                 255         Black
 Color: error_fg              #AF0000                 124         LightRed
 Color: error_bg              #FFD7FF                 225         LightGrey
-Color: matchparen_bg         #FFFF00                 226         DarkGrey
+Color: matchparen_bg         #99CCFF                 153         DarkGrey
 Color: matchparen_fg         #005F87                  24         Black
 Color: visual_fg             #EEEEEE                 255         White
 Color: visual_bg             #0087AF                  31         Blue
@@ -185,7 +185,7 @@ TermCursor	                 -> Cursor
 TermCursorNC                 -> CursorIM
 
 CursorLineNr	               cursorlinenr_fg   cursorlinenr_bg
-MatchParen	                 matchparen_fg     matchparen_bg
+MatchParen	                 none              matchparen_bg
 ModeMsg		                   darkyellow        none
 MoreMsg		                   darkyellow        none
 Question	                   darkyellow        none
