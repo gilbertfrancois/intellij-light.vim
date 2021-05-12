@@ -168,8 +168,8 @@ ColorColumn                  fg                colorcolumn
 
 Cursor		                   black             white             reverse
 CursorIM                     black             white	           reverse
-CursorLine	                 fg                cursorline
-CursorColumn	               -> CursorLine
+CursorLine	                 none              cursorline
+CursorColumn	               none              darkmagenta
 
 SpecialKey	                 darkmagenta       none
 
@@ -328,7 +328,7 @@ CocHintSign                  darkgreen         none
   NERDTreeToggleOff          darkred           none
   NERDTreeToggleOn           darkgreen         none
   NERDTreeDir                darkblue          none              bold
-  NERDTreeDirSlash           none              none
+  NERDTreeDirSlash           white             none
   NERDTreeFile               black             none
   NERDTreeExecFile           darkgreen         none
   ; NERDTreeOpenable 
