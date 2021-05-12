@@ -57,7 +57,7 @@ Color: purple5               #660E7A                  54         DarkMagenta    
 Color: cursor_fg             #FFFFFF                 231         White
 Color: cursor_bg             #000000                  16         Black
 Color: cursorline            #FFFAE3                 230         LightYellow       ; cursorline
-Color: cursorcolumn          #EEEEEE                 255         LightGrey
+Color: cursorcolumn          #E4E4FF                 189         LightBlue         ; highlight variables, don't use cursor column
 Color: colorcolumn           #EEEEEE                 255         LightGrey
 Color: cursorlinenr_fg       #C0C0C0                 230         LightGrey
 Color: cursorlinenr_bg       #FFFFFF                 230         LightYellow
@@ -169,7 +169,7 @@ ColorColumn                  fg                colorcolumn
 Cursor		                   black             white             reverse
 CursorIM                     black             white	           reverse
 CursorLine	                 none              cursorline
-CursorColumn	               none              darkmagenta
+CursorColumn	               none              cursorcolumn
 
 SpecialKey	                 darkmagenta       none
 
