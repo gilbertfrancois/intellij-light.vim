@@ -58,7 +58,8 @@ Color: cursor_fg             #FFFFFF                 231         White
 Color: cursor_bg             #000000                  16         Black
 Color: cursorline            #FFFAE3                 230         LightYellow       ; cursorline
 Color: cursorcolumn          #EEEEEE                 255         LightGrey
-Color: cursorlinenr_fg       #EEEEEE                 255         LightGrey
+Color: colorcolumn           #EEEEEE                 255         LightGrey
+Color: cursorlinenr_fg       #C0C0C0                 230         LightGrey
 Color: cursorlinenr_bg       #FFFFFF                 230         LightYellow
 Color: popupmenu_fg          #444444                 238         Black
 Color: popupmenu_bg          #D0D0D0                 252         LightGrey
@@ -66,7 +67,7 @@ Color: normal_nc_bg          #EEEEEE                 255         LightGrey
 Color: normal_float_bg       #DDDDDD                 253         LightGrey
 Color: search_fg             #444444                 238         Black 
 Color: search_bg             #FFFF5F                 227         LightYellow
-Color: nontext_fg            #808080                 244         DarkGrey
+Color: nontext_fg            #FFAA00                 214         DarkGrey
 Color: linenr_fg             #c0c0c0                 250         LightGrey
 Color: linenr_bg             #FFFFFF                 231         White
 Color: vertsplit_fg          #808080                 244         DarkGrey
@@ -154,22 +155,23 @@ Variant: gui 256 8
 
 Background: light
 
-NonText	                     nontext_fg        white	
+NonText	                     black             none
 LineNr		                   linenr_fg         none
 LineNrAbove                  linenr_fg         none
 LineNrBelow                  linenr_fg         none
-Conceal		                   linenr_fg         linenr_bg
-VertSplit	                   vertsplit_fg      vertsplit_bg
+Conceal		                   linenr_fg         none
+VertSplit	                   vertsplit_fg      none
 Folded		                   folded_fg         folded_bg
 FoldColumn                   folded_fg         white
 SignColumn	                 darkgreen         none
+ColorColumn                  fg                colorcolumn
 
-Cursor		                   none              none              reverse
-CursorIM                     black             white	
-CursorColumn	               none              cursorcolumn
+Cursor		                   black             white             reverse
+CursorIM                     black             white	           reverse
 CursorLine	                 fg                cursorline
+CursorColumn	               -> CursorLine
 
-SpecialKey	                 nontext_fg        none
+SpecialKey	                 darkmagenta       none
 
 Directory	                   darkblue          none
 
@@ -177,7 +179,7 @@ DiffAdd		                   diffadd_fg        diffadd_bg
 DiffChange	                 diffchange_fg     diffchange_bg
 DiffDelete	                 diffdelete_fg     diffdelete_bg
 DiffText                     difftext_fg       difftext_bg
-EndOfBuffer                  -> Normal
+EndOfBuffer                  black             none
 
 TermCursor	                 -> Cursor
 TermCursorNC                 -> CursorIM
@@ -317,6 +319,21 @@ CocHintSign                  darkgreen         none
 ; Add additional highlight groups here if you want
 ; }}}
 
+
+  ; NERDTreeUp
+  ; NERDTreeHelpCommand
+  ; NERDTreeHelpTitle
+  ; NERDTreeHelpKey
+  ; NERDTreeHelp
+  NERDTreeToggleOff          darkred           none
+  NERDTreeToggleOn           darkgreen         none
+  NERDTreeDir                darkblue          none              bold
+  NERDTreeDirSlash           none              none
+  NERDTreeFile               black             none
+  NERDTreeExecFile           darkgreen         none
+  ; NERDTreeOpenable 
+  ; NERDTreeClosable
 ; B/W variant {{{
 ; Include: _bw.colortemplate
 ; }}}
+
