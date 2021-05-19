@@ -23,7 +23,6 @@ Option Prefix: light
 ; Other conventional group names (see `:help group-name`)
 ; }}}
 
-
 ; Color palette {{{
 ; Color name                 GUI                     Base256     Base16 (optional)
 ; xterm colors
@@ -285,9 +284,9 @@ pythonAttribute              purple3           none
 ; pythonQuotes
 ; docstring
 pythonComment        -> Comment
-
 ; }}}
 
+; CoC {{{
 CocErrorFloat                darkred           none
 CocWarningFloat              darkorange        none
 CocInfoFloat                 darkblue          none
@@ -304,36 +303,37 @@ CocHintSign                  darkgreen         none
 ; CocHintVirtualText	 white             black               s=lightblue t=underline g=undercurl 
 ; CocErrorHighlight		 white             black			
 
+; }}}
+
 ; Neovim language server {{{
-; LspDiagnosticsDefaultError             darkred              none
-; LspDiagnosticsDefaultWarning           darkyellow           none
-; LspDiagnosticsDefaultInformation       darkblue             none
-; LspDiagnosticsDefaultHint              darkgreen            none
-; LspDiagnosticsUnderlineError           tmpfg              tmpbg              underline
-; LspDiagnosticsUnderlineWarning         tmpfg           tmpbg              underline
-; LspDiagnosticsUnderlineInformation     tmpfg             tmpbg              underline
-; LspDiagnosticsUnderlineHint            tmpfg            tmpbg              underline
+LspDiagnosticsDefaultError                     lightred          none
+LspDiagnosticsDefaultWarning                   lightyellow       none
+LspDiagnosticsDefaultInformation               lightblue         none
+LspDiagnosticsDefaultHint                      lightgreen        none
+LspDiagnosticsUnderlineError                   lightred          none              t=underline g=undercurl 
+LspDiagnosticsUnderlineWarning                 lightyellow       none              t=underline g=undercurl  
+LspDiagnosticsUnderlineInformation             lightblue         none              t=underline g=undercurl  
+LspDiagnosticsUnderlineHint                    lightgreen        none              t=underline g=undercurl  
 ; }}}
 
 ; Additional highlight groups {{{
 ; Add additional highlight groups here if you want
 ; }}}
 
-
-  ; NERDTreeUp
-  ; NERDTreeHelpCommand
-  ; NERDTreeHelpTitle
-  ; NERDTreeHelpKey
-  ; NERDTreeHelp
-  NERDTreeToggleOff          darkred           none
-  NERDTreeToggleOn           darkgreen         none
-  NERDTreeDir                darkblue          none              bold
-  NERDTreeDirSlash           white             none
-  NERDTreeFile               black             none
-  NERDTreeExecFile           darkgreen         none
-  ; NERDTreeOpenable 
-  ; NERDTreeClosable
+; NERDTree {{{
+; NERDTreeUp
+; NERDTreeHelpCommand
+; NERDTreeHelpTitle
+; NERDTreeHelpKey
+; NERDTreeHelp
+NERDTreeToggleOff          darkred           none
+NERDTreeToggleOn           darkgreen         none
+NERDTreeDir                darkblue          none              bold
+NERDTreeDirSlash           white             none
+NERDTreeFile               black             none
+NERDTreeExecFile           darkgreen         none
+; NERDTreeOpenable 
+; NERDTreeClosable
 ; B/W variant {{{
 ; Include: _bw.colortemplate
-; }}}
-
+;}}}
