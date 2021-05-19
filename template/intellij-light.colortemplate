@@ -26,11 +26,11 @@ Option Prefix: light
 ; Color palette {{{
 ; Color name                 GUI                     Base256     Base16 (optional)
 ; xterm colors
-Color: black                 rgb(  0,   0,   0)        ~         Black
-Color: darkred               rgb(128,   0,   0)        ~         DarkRed
-Color: darkgreen             rgb(  0, 128,   0)        ~         DarkGreen
-Color: darkyellow            rgb(128, 128,   0)        ~         DarkYellow
-Color: darkblue              rgb(  0,   0, 128)        ~         DarkBlue
+Color: black                 #000000        ~         Black
+Color: darkred               #800000        ~         DarkRed
+Color: darkgreen             #008000        ~         DarkGreen
+Color: darkyellow            #808000        ~         DarkYellow
+Color: darkblue              #000080        ~         DarkBlue
 Color: darkmagenta           rgb(128,   0, 128)        ~         DarkMagenta
 Color: darkcyan              rgb(  0, 128, 128)        ~         DarkCyan
 Color: lightgrey             rgb(192, 192, 192)        ~         LightGrey
@@ -103,6 +103,13 @@ Color: tabline_active_fg     #444444                 238         LightGrey
 Color: tabline_active_bg     #E4E4E4                 254         Black
 Color: tabline_inactive_fg   #EEEEEE                 255         Black
 Color: tabline_inactive_bg   #0087AF                  31         DarkMagenta
+
+Color: lsp_verror_fg         #FCA4A7                   ~         LightRed
+Color: lsp_vwarning_fg       #F7E79F                   ~         LightYellow
+Color: lsp_vinfo_fg          #C4DBFA                   ~         LightBlue
+Color: lsp_vhint_fg          #B5E7BE                   ~         LightGreen
+
+Color: lsp_error_fg          #CE0505                   ~         DarkRed
 ; Color: buftabline_bg         #005F87         ~
 ; Color: buftabline_current_fg #444444        ~
 ; Color: buftabline_current_bg #E4E4E4        ~
@@ -314,10 +321,10 @@ LspDiagnosticsUnderlineError                   black             none           
 LspDiagnosticsUnderlineWarning                 black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineInformation             black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineHint                    black             none              t=underline g=undercurl  
-LspDiagnosticsVirtualTextError                 lightred          none
-LspDiagnosticsVirtualTextWarning               darkyellow        none
-LspDiagnosticsVirtualTextInformation           lightblue         none
-LspDiagnosticsVirtualTextHint                  lightgreen        none
+LspDiagnosticsVirtualTextError                 lsp_error_fg      none
+LspDiagnosticsVirtualTextWarning               lsp_vwarning_fg   none
+LspDiagnosticsVirtualTextInformation           lsp_vinfo_fg      none
+LspDiagnosticsVirtualTextHint                  lsp_vhint_fg      none
 
 ; }}}
 
