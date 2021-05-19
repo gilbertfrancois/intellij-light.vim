@@ -310,10 +310,10 @@ LspDiagnosticsDefaultError                     lightred          none
 LspDiagnosticsDefaultWarning                   lightyellow       none
 LspDiagnosticsDefaultInformation               lightblue         none
 LspDiagnosticsDefaultHint                      lightgreen        none
-LspDiagnosticsUnderlineError                   lightred          none              t=underline g=undercurl 
-LspDiagnosticsUnderlineWarning                 lightyellow       none              t=underline g=undercurl  
-LspDiagnosticsUnderlineInformation             lightblue         none              t=underline g=undercurl  
-LspDiagnosticsUnderlineHint                    lightgreen        none              t=underline g=undercurl  
+LspDiagnosticsUnderlineError                   black             none              t=underline g=undercurl 
+LspDiagnosticsUnderlineWarning                 black             none              t=underline g=undercurl  
+LspDiagnosticsUnderlineInformation             black             none              t=underline g=undercurl  
+LspDiagnosticsUnderlineHint                    black             none              t=underline g=undercurl  
 ; }}}
 
 ; Additional highlight groups {{{
