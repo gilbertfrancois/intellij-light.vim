@@ -306,18 +306,18 @@ CocHintSign                  darkgreen         none
 ; }}}
 
 ; Neovim language server {{{
-LspDiagnosticsDefaultError                     lightred          none
-LspDiagnosticsDefaultWarning                   lightyellow       none
-LspDiagnosticsDefaultInformation               lightblue         none
-LspDiagnosticsDefaultHint                      lightgreen        none
+LspDiagnosticsDefaultError                     black             none
+LspDiagnosticsDefaultWarning                   black             none
+LspDiagnosticsDefaultInformation               black             none
+LspDiagnosticsDefaultHint                      black             none
 LspDiagnosticsUnderlineError                   black             none              t=underline g=undercurl 
 LspDiagnosticsUnderlineWarning                 black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineInformation             black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineHint                    black             none              t=underline g=undercurl  
-LspDiagnosticsVirtualTextError                 black             none
-LspDiagnosticsVirtualTextWarning               black             none
-LspDiagnosticsVirtualTextInformation           black             none
-LspDiagnosticsVirtualTextHint                  black             none
+LspDiagnosticsVirtualTextError                 lightred          none
+LspDiagnosticsVirtualTextWarning               darkyellow        none
+LspDiagnosticsVirtualTextInformation           lightblue         none
+LspDiagnosticsVirtualTextHint                  lightgreen        none
 
 ; }}}
 
