@@ -321,7 +321,7 @@ LspDiagnosticsUnderlineError                   black             none           
 LspDiagnosticsUnderlineWarning                 black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineInformation             black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineHint                    black             none              t=underline g=undercurl  
-LspDiagnosticsVirtualTextError                 lsp_error_fg      none
+LspDiagnosticsVirtualTextError                 lsp_verror_fg     none
 LspDiagnosticsVirtualTextWarning               lsp_vwarning_fg   none
 LspDiagnosticsVirtualTextInformation           lsp_vinfo_fg      none
 LspDiagnosticsVirtualTextHint                  lsp_vhint_fg      none
