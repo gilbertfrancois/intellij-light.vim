@@ -306,10 +306,10 @@ CocHintSign                  darkgreen         none
 ; }}}
 
 ; Neovim language server {{{
-LspDiagnosticsDefaultError                     black             none
-LspDiagnosticsDefaultWarning                   black             none
-LspDiagnosticsDefaultInformation               black             none
-LspDiagnosticsDefaultHint                      black             none
+LspDiagnosticsDefaultError                     darkred           none
+LspDiagnosticsDefaultWarning                   darkyellow        none
+LspDiagnosticsDefaultInformation               darkblue          none
+LspDiagnosticsDefaultHint                      darkgreen         none
 LspDiagnosticsUnderlineError                   black             none              t=underline g=undercurl 
 LspDiagnosticsUnderlineWarning                 black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineInformation             black             none              t=underline g=undercurl  
