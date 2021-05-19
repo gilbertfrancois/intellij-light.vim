@@ -314,6 +314,11 @@ LspDiagnosticsUnderlineError                   black             none           
 LspDiagnosticsUnderlineWarning                 black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineInformation             black             none              t=underline g=undercurl  
 LspDiagnosticsUnderlineHint                    black             none              t=underline g=undercurl  
+LspDiagnosticsVirtualTextError                 black             none
+LspDiagnosticsVirtualTextWarning               black             none
+LspDiagnosticsVirtualTextInformation           black             none
+LspDiagnosticsVirtualTextHint                  black             none
+
 ; }}}
 
 ; Additional highlight groups {{{
